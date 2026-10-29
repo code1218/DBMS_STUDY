@@ -38,6 +38,7 @@
 ├── chapters/
 │   └── chNN-주제/
 │       ├── setup.sql       이 챕터 DB(hanip_deliveryNN) 생성 — 수업 시작 시 실행
+│       ├── chNN-slides.pptx 강의 슬라이드
 │       ├── README.md       교안
 │       ├── lecture.sql     강사 시연 스크립트
 │       ├── practice.md     실습 문제 + 기대 결과
@@ -48,6 +49,18 @@
 ├── src/                   교안 원본 (결과표 자동 생성 전)
 └── tools/                 시드 생성기, 교안 빌더
 ```
+
+## 강의 슬라이드
+
+각 챕터 폴더의 `chNN-slides.pptx`가 강의용 슬라이드입니다. 교안 흐름(오늘의 요청 → 개념 → SQL과 실제 실행 결과 → 틀린 예/바른 예 → 정리 → 실습 → 다음 시간 예고)을 그대로 따릅니다.
+
+**글꼴 설치(강의 PC 1회)** — 슬라이드는 아래 무료 글꼴을 씁니다. 설치되어 있지 않으면 PowerPoint가 다른 글꼴로 바꿔 보여 줍니다.
+
+| 용도 | 글꼴 | 받는 곳 |
+|---|---|---|
+| 제목 | Gowun Batang | Google Fonts |
+| 본문 | IBM Plex Sans KR | Google Fonts |
+| 코드 | IBM Plex Mono | Google Fonts |
 
 ## 교안 수정 방법 (관리자용)
 
@@ -62,5 +75,6 @@ python3 tools/build.py     # 챕터별 setup.sql 생성 + src/*.md 의 ```sql ru
 - ```` ```sql run ```` — 실행하고 결과표 삽입 (`limit=N`으로 표시 행 수 조정)
 - ```` ```sql error ```` — 에러가 나야 하는 예제. 실제 에러 메시지 삽입
 - ```` ```sql answer ```` — 실습 정답. 문제지에는 결과표만, 해설지에는 SQL+결과
+- 슬라이드: `src/slides/chNN.py` 수정 → `python3 tools/build_slides.py NN` (SQL 결과는 슬라이드에도 실제 실행 결과가 들어갑니다. node + pptxgenjs 필요)
 - 교안 원본에서 DB 이름은 `{{DB}}`로 씁니다 (빌드 시 `hanip_deliveryNN`으로 치환)
 - 시드 데이터를 바꾸려면 `tools/gen_seed.py` 수정 → `python3 tools/gen_seed.py` → 빌드

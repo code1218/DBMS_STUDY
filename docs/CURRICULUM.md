@@ -96,6 +96,7 @@ ERD와 컬럼 사전은 [`database/README.md`](../database/README.md).
 | 파일 | 용도 | 배포 대상 |
 |---|---|---|
 | `setup.sql` | 이 챕터 DB(`hanip_deliveryNN`) 생성 + 데이터 입력 | 학생 (수업 시작 시 실행) |
+| `chNN-slides.pptx` | 강의 슬라이드 (결과표는 실제 실행 결과) | 강사 · 학생 |
 | `README.md` | 교안 (이론·예제·실행 결과) | 학생 |
 | `lecture.sql` | 강사 시연 순서대로 정리한 실행 스크립트 | 학생 (수업 후) |
 | `practice.md` | 실습 문제 + 기대 결과 (정답 SQL 없음) | 학생 |
