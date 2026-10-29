@@ -21,7 +21,7 @@
 | 01 | [데이터베이스와 첫 만남](chapters/ch01-first-database/README.md) | ✅ |
 | 02 | [SELECT 기본 — 원하는 행과 열만](chapters/ch02-select-basics/README.md) | ✅ |
 | 03 | [함수로 데이터 가공하기](chapters/ch03-functions/README.md) | ✅ |
-| 04 | 집계와 그룹 | 예정 |
+| 04 | [집계와 그룹](chapters/ch04-aggregation/README.md) | ✅ |
 | 05 | JOIN — 흩어진 데이터 잇기 | 예정 |
 | 06 | 서브쿼리·집합·윈도우 함수 | 예정 |
 | 07 | 테이블 설계와 제약조건 (DDL) | 예정 |
