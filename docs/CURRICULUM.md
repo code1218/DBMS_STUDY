@@ -82,7 +82,7 @@ ERD와 컬럼 사전은 [`database/README.md`](../database/README.md).
 
 | Ch | 제목 | 이 챕터의 질문 | 핵심 내용 | 산출물 |
 |---|---|---|---|---|
-| 09 | 데이터 모델링과 정규화 | "orders와 order_items는 왜 나뉘어 있었을까?" | 요구사항 → 개념 → 논리 → 물리 모델, ERD(엔터티·속성·관계·카디널리티·식별/비식별), M:N 해소, Workbench Reverse Engineer, 이상현상, 1NF·2NF·3NF(BCNF 개념), **반정규화 판단**: 우리 스키마의 `unit_price`·`orders.restaurant_id`는 왜 일부러 남겼나 | 기능 추가 ERD (팀) |
+| 09 | 데이터 모델링과 정규화 | "orders와 order_items는 왜 나뉘어 있었을까?" | 요구사항 → 개념 → 논리 → 물리 모델, ERD(엔터티·속성·관계·카디널리티·식별/비식별), M:N 해소, Workbench Reverse Engineer, 이상현상, 후보키 찾기, **1NF·2NF·3NF·BCNF 직접 분해**(SQL로 다중값 펴기, BCNF의 종속 보존 문제), **반정규화 판단**: 우리 스키마의 `unit_price`·`orders.restaurant_id`는 왜 일부러 남겼나 | 정규화 실습 11문제 (정규형별 시트 6장) + 기능 추가 ERD (팀) |
 | 10 | 뷰·인덱스·사용자 관리 | "자주 쓰는 리포트는 저장하고, 느린 쿼리는 빠르게, 권한은 최소로" | VIEW(생성·활용·보안), 인덱스 원리(B-Tree 직관)·EXPLAIN 읽기·복합 인덱스 순서, 사용자·GRANT·REVOKE·ROLE, mysqldump 백업·복원, 정보처리기사 SQL 유형 정리 | 리포트 뷰 3종 + 튜닝 전후 비교 |
 
 ### PART 4. 서버 프로그래밍 (Ch11~12, 6시간)
